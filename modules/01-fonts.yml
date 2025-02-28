@@ -10,9 +10,9 @@ commands:
 
   # Adwaita Fonts
   - wget -P /usr/share/fonts https://gitlab.gnome.org/GNOME/adwaita-fonts/-/archive/48.2/adwaita-fonts-48.2.zip 
-  - cd /usr/share/fonts \
-  - unzip adwaita-fonts-48.2.zip \
-  - rm adwaita-fonts-48.2.zip \
-  - cd adwaita-fonts-48.2 \
-  - rm -rf .gitlab .gitignore .gitlab-ci.yml meson.build preview.png \
+  - cd /usr/share/fonts 
+  - unzip adwaita-fonts-48.2.zip 
+  - rm adwaita-fonts-48.2.zip 
+  - cd adwaita-fonts-48.2 
+  - rm -rf .gitlab .gitignore .gitlab-ci.yml meson.build preview.png 
   - fc-cache -fv
