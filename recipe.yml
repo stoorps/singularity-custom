@@ -32,6 +32,7 @@ stages:
           - modules/03-vib.yml
           - modules/04-dev-container.yml
           - modules/05-exports.yml
+          - modules/06-flatpaks.yml
           - modules/80-set-image-abroot-config.yml
 
     

@@ -1,0 +1,11 @@
+name: flatpaks
+type: shell
+commands:
+  - flatpak install flathub \
+    app.zen_browser.zen \
+    io.appflowy.AppFlowy \
+    org.gnome.gitlab.somas.Apostrophe \
+    com.discordapp.Discord \
+    com.valvesoftware.Steam \
+    com.github.tchx84.Flatseal \
+    -y
