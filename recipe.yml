@@ -28,7 +28,7 @@ stages:
         includes:
          # - modules/00-boot-setup.yml
           - modules/01-fonts.yml
-          - modules/02-emu.yml
+       #   - modules/02-emu.yml
           - modules/03-vib.yml
           - modules/04-dev-container.yml
           - modules/05-exports.yml
