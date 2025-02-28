@@ -1,0 +1,18 @@
+name: fonts
+type: shell
+commands:
+  # Fira Mono Nerd Font
+  - wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraMono.zip \
+    && cd ~/.local/share/fonts \
+    && unzip FiraMono.zip \
+    && rm FiraMono.zip \
+    && fc-cache -fv
+
+  # Adwaita Fonts
+  - wget -P ~/.local/share/fonts https://gitlab.gnome.org/GNOME/adwaita-fonts/-/archive/48.2/adwaita-fonts-48.2.zip \
+    && cd ~/.local/share/fonts \
+    && unzip adwaita-fonts-48.2.zip \
+    && rm adwaita-fonts-48.2.zip \
+    && cd adwaita-fonts-48.2 \
+    && rm -rf .gitlab .gitignore .gitlab-ci.yml meson.build preview.png \
+    && fc-cache -fv

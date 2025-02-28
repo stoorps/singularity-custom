@@ -1,0 +1,6 @@
+name: emulation-station
+type: shell
+commands:
+ # EmulationStation DE
+  - wget -P ~/.local/bin https://gitlab.com/es-de/emulationstation-de/-/package_files/164503027/download \
+    && chmod +x ES-DE_x64.AppImage

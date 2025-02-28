@@ -1,0 +1,10 @@
+name: vib
+type: shell
+commands:
+  # Vib Plugins
+  - wget https://github.com/Vanilla-OS/Vib/releases/latest/download/plugins.tar.xz
+  - mkdir -p ~/.local/bin/plugins
+  - tar -xvf plugins.tar.xz -C ~/.local/bin/plugins --strip-components 2
+
+  # My Vib Plugins
+  - wget -O ~/.local/bin/plugins/boot-shell.so https://github.com/stoorps/vib-plugins/releases/download/v0.0.3/boot-shell.so
