@@ -1,6 +1,0 @@
-name: dev-container
-type: shell
-commands:
-  # setup dev container
-  - apx stacks new -b ghcr.io/stoorps/fedora-dev:main -n fedora-dev -k dnf -y
-  - apx subsystems new -i -n dev -s fedora-dev

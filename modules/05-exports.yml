@@ -1,9 +1,0 @@
-name: exports
-type: shell
-commands:
-  - apx dev export -a code
-  - apx dev export -a zed
-  - apx dev export -b code
-  - apx dev export -b zed
-  - apx dev export -b git
-  - apx dev export -b gh
