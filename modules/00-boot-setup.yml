@@ -1,5 +1,8 @@
 name: boot-setup
 type: boot-shell
+as: user
+packages: #remove this later
+ - nothing
 commands:
   - vso install fuse libfuse2 libasound2t64
   # Vib setup
