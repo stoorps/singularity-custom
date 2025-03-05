@@ -3,7 +3,7 @@ id: custom
 vibversion: 1.0.0
 stages:
   - id: build
-    base: ghcr.io/stoorps/nvidia:main 
+    base: ghcr.io/singularityos-lab/nvidia:main
     singlelayer: false
     labels:
       maintainer: stoorps
@@ -26,7 +26,7 @@ stages:
       - name: set-image-name-abroot
         type: includes
         includes:
-          - modules/00-boot-setup.yml
+        #  - modules/00-boot-setup.yml
           - modules/01-fonts.yml
        #   - modules/02-emu.yml
           - modules/03-vib.yml
